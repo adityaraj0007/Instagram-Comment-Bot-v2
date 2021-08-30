@@ -79,17 +79,17 @@ def login_to_instagram(browser):
     except:
         pass
 
-    browser.implicitly_wait(30)
+    browser.implicitly_wait(10)
 
     logger.info('Logged in to ' + database['credentials']['username'])
 
     # Save your login info? Not now
-    browser.implicitly_wait(30)
+    browser.implicitly_wait(10)
     browser.find_element_by_xpath(
         "//*[@id='react-root']/section/main/div/div/div/div/button").click()
 
     # Turn on notifications? Not now
-    browser.implicitly_wait(30)
+    browser.implicitly_wait(10)
     browser.find_element_by_xpath(
         "/html/body/div[5]/div/div/div/div[3]/button[2]").click()
 
